@@ -32,11 +32,11 @@ jobs:
       - name: Build and Publish
         env:
           TWINE_USERNAME: __token__
-          TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+          TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
           pip install build twine
           python -m build
-          twine upload dist/* || echo "Upload failed - likely version conflict or no token"
+          twine upload --repository testpypi dist/* || echo "Upload failed - likely version conflict or no token"
 
   deploy-docs:
     needs: release

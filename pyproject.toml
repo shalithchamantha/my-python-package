@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my-python-package"
+name = "my-python-package-shalith"
 version = "0.1.0"
 authors = [
   { name="Your Name", email="your@email.com" },

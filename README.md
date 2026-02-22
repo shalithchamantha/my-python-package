@@ -2,4 +2,4 @@
 
 A short description of the project.
 
-Test run for CI
+Test repo for python-package-template
